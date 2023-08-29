@@ -69,8 +69,8 @@ class App
     if @people.empty?
       puts 'Sorry, No people available.'
     else
-      @people.each do |person, index|
-        puts "#{index + 1} - Name: #{person.name}, Age: #{person.age}"
+     @people.each_with_index do |person, index|
+        puts "#{index}- [#{person.type}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       end
     end
   end
