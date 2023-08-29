@@ -2,6 +2,7 @@ require_relative 'nameable'
 
 class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
     @id = generate_id
     @name = name
     @age = age
@@ -19,6 +20,11 @@ class Person < Nameable
     of_age? || parent_permission
   end
 
+
+  def correct_name
+    @name
+  end
+  
   private
 
   def of_age?
@@ -29,7 +35,4 @@ class Person < Nameable
     rand(1..1000)
   end
 
-  def correct_name
-    @name
-  end
 end
