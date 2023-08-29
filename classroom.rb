@@ -1,5 +1,3 @@
-require_relative 'studnet'
-
 class Classroom
   attr_accessor :label, :students
 
