@@ -1,4 +1,6 @@
-class Person
+require_relative 'nameable'
+
+class Person < Nameable
   def initialize(age, name = 'Unknown', parent_permission: true)
     @id = generate_id
     @name = name
@@ -25,5 +27,9 @@ class Person
 
   def generate_id
     rand(1..1000)
+  end
+
+  def correct_name
+    @name
   end
 end
