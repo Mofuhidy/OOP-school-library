@@ -2,12 +2,12 @@ require_relative 'nameable'
 require_relative 'rental'
 
 class Person < Nameable
-   # getters
+  # getters
   attr_reader :id, :rentals
 
   # setters
   attr_accessor :name, :age
-  
+
   def initialize(age, name = 'Unknown', parent_permission: true)
     super()
     @id = generate_id
@@ -16,8 +16,6 @@ class Person < Nameable
     @parent_permission = parent_permission
     @rentals = []
   end
-
- 
 
   def can_use_services?
     of_age? || parent_permission
@@ -28,7 +26,7 @@ class Person < Nameable
   end
 
   def add_rental(date, book)
-    Rental.new(date, self, book)
+    Rental.new(date, book, self)
   end
 
   private

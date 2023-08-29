@@ -69,7 +69,7 @@ class App
     if @people.empty?
       puts 'Sorry, No people available.'
     else
-     @people.each_with_index do |person, index|
+      @people.each_with_index do |person, index|
         puts "#{index}- [#{person.type}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
       end
     end
@@ -125,7 +125,7 @@ class App
   def create_rental
     if @books.empty?
       puts 'Sorry, there is no book in the collection to rent out.'
-    elsif @persons.empty?
+    elsif @people.empty?
       puts 'Sorry, there is no person in the Database. Add a person first in the database'
     else
       puts 'Select a book from the following list by number'
@@ -138,7 +138,7 @@ class App
       person = @people[person_id]
       print 'Date: '
       date = gets.chomp
-      rental = Rental.new(date, book, person)
+      rental = Rental.new(date, person, book)
       @rentals.push(rental)
       puts "Rental for '#{book.title}' by '#{person.name}' created successfully"
     end
