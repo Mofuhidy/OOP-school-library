@@ -10,7 +10,7 @@
 
 ## 📗 Table of Contents
 
-- [📖 Enumerable ](#-Create our own Enumerable-)
+- [📖 OOP School Library ](#-oop-school-library-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Enumerable <a name="about-project"></a>
+# 📖 OOP School Library <a name="about-project"></a>
 
 **School library** is a Ruby school library project, in which add students and teachers as users, track record of who borrows a specific book, and when did he borrow.
 
@@ -117,7 +117,7 @@ it will install the required gemfile for running the project
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../issues/).
+Feel free to check the [issues page](https://github.com/Mofuhidy/OOP-school-library/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
