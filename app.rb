@@ -60,7 +60,7 @@ class App
       puts 'Sorry, No books available.'
     else
       @books.each do |book, index|
-        puts "#{index + 1} - Title: #{book.title}, Author: #{book.author}"
+        puts "#{index} - Title: #{book.title}, Author: #{book.author}"
       end
     end
   end
