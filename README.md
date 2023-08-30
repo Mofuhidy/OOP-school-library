@@ -18,7 +18,6 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
-    - [Usage](#usage)
   - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -65,8 +64,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need:
 
 ```
-    ruby
-    bundler
+    ruby main.rb
 ```
 
 ### Setup
@@ -82,15 +80,11 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```bash
-  cd enumerable
+  cd oop-school-library
   bundle install
 ```
 
 it will install the required gemfile for running the project
-
-### Usage
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
